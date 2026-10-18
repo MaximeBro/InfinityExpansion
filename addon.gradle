@@ -1,0 +1,78 @@
+// Shared build conventions for Slimefun5 fork addons, so every addon's build.gradle.kts stops repeating
+// the same version / publish / java / repository / dependency / task boilerplate.
+//
+// Apply AFTER the plugins { } block (which must apply: java, com.gradleup.shadow, io.github.intisy.github-gradle):
+//   apply(from = "https://raw.githubusercontent.com/Slimefun5/gradle/main/slimefun-addon.gradle")
+//
+// The addon build then only sets `group`/`description` and adds its own extras (SlimefunMetrics, bStats +
+// relocation, extra libs/repos). Optional overrides via -P properties: sfCoreVersion, sfSpigotApi, sfDefaultVersion.
+
+def sfCoreVersion = project.findProperty('sfCoreVersion') ?: '5.3.3.3'
+def sfSpigotApi   = project.findProperty('sfSpigotApi')   ?: '1.16.5-R0.1-SNAPSHOT'
+
+// Shared version resolution (git-tag based, prefix/reachability-agnostic) — sets version + ext.displayVersion.
+// version.gradle already applies any -Partifact_version override (stripping a leading "v" and dropping the
+// -EXPERIMENTAL/-UNOFFICIAL suffix on release builds), so just use its result — do NOT re-read the raw
+// property here (that re-introduced the tag's "v", producing "<Name>-v1.2.3.jar").
+apply from: 'https://raw.githubusercontent.com/Slimefun5/gradle/main/version.gradle'
+def displayVersion = project.ext.displayVersion.toString()
+
+github {
+    accessToken = System.getenv('GITHUB_TOKEN') ?: ''
+    publish {
+        tag = System.getenv('GITHUB_REF_NAME')
+    }
+}
+
+// Spigot 1.16.5 is the Java-8-compatible API baseline; version-specific behaviour goes through Slimefun's
+// compat layer so the single jar still runs on 1.8 - 26.x.
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    maven { url = 'https://repo.papermc.io/repository/maven-public/' }
+    maven { url = 'https://repo.codemc.io/repository/maven-public/' }
+    maven { url = 'https://jitpack.io' }
+}
+
+dependencies {
+    compileOnly "org.spigotmc:spigot-api:${sfSpigotApi}"
+    compileOnly 'com.google.code.findbugs:jsr305:3.0.2'
+    githubCompileOnly "Slimefun5:Slimefun5:${sfCoreVersion}"
+}
+
+tasks.named('compileJava') {
+    options.encoding = 'UTF-8'
+}
+tasks.named('processResources') {
+    filesMatching('plugin.yml') {
+        expand('version': displayVersion)
+    }
+}
+tasks.named('jar') {
+    enabled = false
+}
+tasks.named('shadowJar') {
+    archiveFileName = "${project.name}-${displayVersion}.jar"
+    exclude 'META-INF/**'
+    // Never bundle Slimefun core: it is present at runtime via depend:[Slimefun]. Shading a copy of
+    // its classes (githubImplementation drags core in transitively) causes loader-constraint
+    // LinkageErrors when a manually-installed addon jar enables alongside core. Covers both the new
+    // package and the legacy me.mrCookieSlime.* API core still ships.
+    exclude 'io/github/thebusybiscuit/slimefun5/**'
+    exclude 'me/mrCookieSlime/**'
+}
+tasks.named('build') {
+    dependsOn 'shadowJar'
+}
+
+// Addons don't run their (upstream) test suites in this fork; disable them uniformly. An addon that wants
+// tests can re-enable compileTestJava/test and add its own test dependencies.
+tasks.matching { it.name == 'compileTestJava' || it.name == 'test' }.configureEach {
+    enabled = false
+}

@@ -23,12 +23,15 @@ import io.github.thebusybiscuit.slimefun5.core.attributes.NotPlaceable;
 public final class Strainer extends SlimefunItem implements NotPlaceable {
 
     private static final NamespacedKey KEY = InfinityExpansion.pdcKey("strainer_speed");
+    private final int speed;
 
     public Strainer(SlimefunItemStack item, ItemStack[] recipe, int speed) {
         super(Groups.BASIC_MACHINES, item, RecipeType.ENHANCED_CRAFTING_TABLE, recipe);
         ItemMeta meta = item.getItemMeta();
         CompatUtils.setPdcInt(meta, KEY, speed);
         item.setItemMeta(meta);
+
+        this.speed = speed;
     }
 
     /**
@@ -37,7 +40,14 @@ public final class Strainer extends SlimefunItem implements NotPlaceable {
      * @return speed
      */
     public static int getStrainer(@Nullable ItemStack item) {
-        if (item != null && item.hasItemMeta()) {
+        if (item == null) return 0;
+
+        SlimefunItem sfItem = SlimefunItem.getByItem(item);
+        if (sfItem instanceof Strainer) {
+            return ((Strainer) sfItem).speed;
+        }
+
+        if (item.hasItemMeta()) {
             return CompatUtils.getPdcInt(item.getItemMeta(), Strainer.KEY, 0);
         }
         return 0;
