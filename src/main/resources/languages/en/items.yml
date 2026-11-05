@@ -9,7 +9,7 @@ ADVANCED_GEO_MINER:
     - "&7A faster geo-miner"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b4x"
-    - "&8⇨ &e⚡ &7120 J/s"
+    - "&8⇨ &e⚡ &7240 J/s"
 
 ADVANCED_SMELTERY:
   name: "&cAdvanced &7Smeltery"
@@ -19,7 +19,7 @@ ADVANCED_SMELTERY:
     - "&7A faster smeltery"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b24x"
-    - "&8⇨ &e⚡ &7240 J/s"
+    - "&8⇨ &e⚡ &7480 J/s"
 
 ADVANCED_CHARGER:
   name: "&cAdvanced Charger"
@@ -29,7 +29,7 @@ ADVANCED_CHARGER:
     - "&7Quickly charges items"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b30x"
-    - "&8⇨ &e⚡ &7180 J/s"
+    - "&8⇨ &e⚡ &7360 J/s"
 
 INFINITY_CHARGER:
   name: "&bInfinity Charger"
@@ -52,7 +52,7 @@ ADVANCED_NETHER_STAR_REACTOR:
     - "&4Causes nearby Entities to get Withered"
   stats:
     - "&8⇨ &e⚡ &790,000 J Buffer"
-    - "&8⇨ &e⚡ &71,800 J/s"
+    - "&8⇨ &e⚡ &73,600 J/s"
 
 ADVANCED_ENCHANTER:
   name: "&cAdvanced Enchanter"
@@ -62,7 +62,7 @@ ADVANCED_ENCHANTER:
     - "&7Automatically enchants items placed inside it"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b5x"
-    - "&8⇨ &e⚡ &7180 J/s"
+    - "&8⇨ &e⚡ &7360 J/s"
 
 ADVANCED_DISENCHANTER:
   name: "&cAdvanced Disenchanter"
@@ -72,7 +72,7 @@ ADVANCED_DISENCHANTER:
     - "&7Automatically removes enchantments from items into books"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b5x"
-    - "&8⇨ &e⚡ &7180 J/s"
+    - "&8⇨ &e⚡ &7360 J/s"
 
 INFINITY_ENCHANTER:
   name: "&bInfinity Enchanter"
@@ -260,7 +260,7 @@ INFINITY_REACTOR:
     - "&7of &8Void &7and &bInfinity &7Ingots"
   stats:
     - "&8⇨ &e⚡ &7120,000,000 J Buffer"
-    - "&8⇨ &e⚡ &7120,000 J/s"
+    - "&8⇨ &e⚡ &7240,000 J/s"
 
 HYDRO_GENERATOR:
   name: "&9Hydro Generator"
@@ -270,7 +270,7 @@ HYDRO_GENERATOR:
     - "&7Generates energy from the movement of water"
   stats:
     - "&8⇨ &e⚡ &7500 J Buffer"
-    - "&8⇨ &e⚡ &75 J/s"
+    - "&8⇨ &e⚡ &710 J/s"
 
 REINFORCED_HYDRO_GENERATOR:
   name: "&fReinforced &9Hydro Gen"
@@ -281,7 +281,7 @@ REINFORCED_HYDRO_GENERATOR:
     - "&7from the movement of water"
   stats:
     - "&8⇨ &e⚡ &74,500 J Buffer"
-    - "&8⇨ &e⚡ &745 J/s"
+    - "&8⇨ &e⚡ &790 J/s"
 
 GEOTHERMAL_GENERATOR:
   name: "&cGeothermal Generator"
@@ -291,7 +291,7 @@ GEOTHERMAL_GENERATOR:
     - "&7Generates energy from the heat of the world"
   stats:
     - "&8⇨ &e⚡ &73,500 J Buffer"
-    - "&8⇨ &e⚡ &735 J/s"
+    - "&8⇨ &e⚡ &770 J/s"
 
 REINFORCED_GEOTHERMAL_GENERATOR:
   name: "&fReinforced &cGeothermal Gen"
@@ -302,7 +302,7 @@ REINFORCED_GEOTHERMAL_GENERATOR:
     - "&7from the heat of the world"
   stats:
     - "&8⇨ &e⚡ &721,000 J Buffer"
-    - "&8⇨ &e⚡ &7210 J/s"
+    - "&8⇨ &e⚡ &7420 J/s"
 
 BASIC_PANEL:
   name: "&9Basic Solar Panel"
@@ -312,7 +312,7 @@ BASIC_PANEL:
     - "&7Generates energy from the sun"
   stats:
     - "&8⇨ &e⚡ &7900 J Buffer"
-    - "&8⇨ &e⚡ &79 J/s"
+    - "&8⇨ &e⚡ &718 J/s"
 
 ADVANCED_PANEL:
   name: "&cAdvanced Solar Panel"
@@ -322,7 +322,7 @@ ADVANCED_PANEL:
     - "&7Generates energy from the sun"
   stats:
     - "&8⇨ &e⚡ &715,000 J Buffer"
-    - "&8⇨ &e⚡ &7150 J/s"
+    - "&8⇨ &e⚡ &7300 J/s"
 
 CELESTIAL_PANEL:
   name: "&eCelestial Panel"
@@ -332,7 +332,7 @@ CELESTIAL_PANEL:
     - "&7Generates energy from the sun"
   stats:
     - "&8⇨ &e⚡ &775,000 J Buffer"
-    - "&8⇨ &e⚡ &7750 J/s"
+    - "&8⇨ &e⚡ &71,500 J/s"
 
 VOID_PANEL:
   name: "&8Void Panel"
@@ -342,7 +342,7 @@ VOID_PANEL:
     - "&7Generates energy from darkness"
   stats:
     - "&8⇨ &e⚡ &7300,000 J Buffer"
-    - "&8⇨ &e⚡ &73,000 J/s"
+    - "&8⇨ &e⚡ &76,000 J/s"
 
 INFINITE_PANEL:
   name: "&bInfinity Panel"
@@ -352,7 +352,7 @@ INFINITE_PANEL:
     - "&7Generates energy from the cosmos"
   stats:
     - "&8⇨ &e⚡ &76,000,000 J Buffer"
-    - "&8⇨ &e⚡ &760,000 J/s"
+    - "&8⇨ &e⚡ &7120,000 J/s"
 
 COBBLE_PRESS:
   name: "&8Cobble Press"
@@ -361,7 +361,7 @@ COBBLE_PRESS:
   description:
     - "&7Compresses cobblestone more efficiently"
   stats:
-    - "&8⇨ &e⚡ &7120 J/s"
+    - "&8⇨ &e⚡ &7240 J/s"
 
 RESOURCE_SYNTHESIZER:
   name: "&6Resource Synthesizer"
@@ -380,7 +380,7 @@ BASIC_VIRTUAL_FARM:
     - "&7Automatically grows, harvests, and replants crops"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b1x"
-    - "&8⇨ &e⚡ &718 J/s"
+    - "&8⇨ &e⚡ &736 J/s"
 
 ADVANCED_VIRTUAL_FARM:
   name: "&cAdvanced &aVirtual Farm"
@@ -390,7 +390,7 @@ ADVANCED_VIRTUAL_FARM:
     - "&7Automatically grows, harvests, and replants crops"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b5x"
-    - "&8⇨ &e⚡ &790 J/s"
+    - "&8⇨ &e⚡ &7180 J/s"
 
 INFINITY_VIRTUAL_FARM:
   name: "&bInfinity &aVirtual Farm"
@@ -400,7 +400,7 @@ INFINITY_VIRTUAL_FARM:
     - "&7Automatically grows, harvests, and replants crops"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b25x"
-    - "&8⇨ &e⚡ &7900 J/s"
+    - "&8⇨ &e⚡ &71800 J/s"
 
 BASIC_TREE_GROWER:
   name: "&9Basic &2Tree Grower"
@@ -410,7 +410,7 @@ BASIC_TREE_GROWER:
     - "&7Automatically grows, harvests, and replants trees"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b1x"
-    - "&8⇨ &e⚡ &736 J/s"
+    - "&8⇨ &e⚡ &772 J/s"
 
 ADVANCED_TREE_GROWER:
   name: "&cAdvanced &2Tree Grower"
@@ -420,7 +420,7 @@ ADVANCED_TREE_GROWER:
     - "&7Automatically grows, harvests, and replants trees"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b5x"
-    - "&8⇨ &e⚡ &7180 J/s"
+    - "&8⇨ &e⚡ &7360 J/s"
 
 INFINITY_TREE_GROWER:
   name: "&bInfinity &2Tree Grower"
@@ -430,7 +430,7 @@ INFINITY_TREE_GROWER:
     - "&7Automatically grows, harvests, and replants trees"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b25x"
-    - "&8⇨ &e⚡ &71,800 J/s"
+    - "&8⇨ &e⚡ &73,600 J/s"
 
 POWERED_BEDROCK:
   name: "&4Powered Bedrock"
@@ -440,7 +440,7 @@ POWERED_BEDROCK:
     - "&7When powered, transforms into a bedrock"
     - "&7Will revert once unpowered or broken"
   stats:
-    - "&8⇨ &e⚡ &710,000 J/s"
+    - "&8⇨ &e⚡ &720,000 J/s"
 
 GEO_QUARRY:
   name: "&fGeo Quarry"
@@ -449,7 +449,7 @@ GEO_QUARRY:
   description:
     - "&7Slowly harvests geo resources from the void using power"
   stats:
-    - "&8⇨ &e⚡ &7450 J/s"
+    - "&8⇨ &e⚡ &7900 J/s"
 
 EXTREME_FREEZER:
   name: "&bExtreme Freezer"
@@ -458,7 +458,7 @@ EXTREME_FREEZER:
   description:
     - "&7Converts ice into coolant"
   stats:
-    - "&8⇨ &e⚡ &790 J/s"
+    - "&8⇨ &e⚡ &7180 J/s"
 
 DUST_EXTRACTOR:
   name: "&8Dust Extractor"
@@ -468,7 +468,7 @@ DUST_EXTRACTOR:
     - "&7Converts cobble into dusts"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b1x"
-    - "&8⇨ &e⚡ &7240 J/s"
+    - "&8⇨ &e⚡ &7480 J/s"
 
 INFINITY_DUST_EXTRACTOR:
   name: "&bInfinity &8Dust Extractor"
@@ -478,7 +478,7 @@ INFINITY_DUST_EXTRACTOR:
     - "&7Converts cobble into dusts"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b16x"
-    - "&8⇨ &e⚡ &77,200 J/s"
+    - "&8⇨ &e⚡ &714,400 J/s"
 
 INGOT_FORMER:
   name: "&8Ingot Former"
@@ -488,7 +488,7 @@ INGOT_FORMER:
     - "&7Forms ingots from dusts"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b1x"
-    - "&8⇨ &e⚡ &7240 J/s"
+    - "&8⇨ &e⚡ &7480 J/s"
 
 INFINITY_INGOT_FORMER:
   name: "&bInfinity &8Ingot Former"
@@ -498,7 +498,7 @@ INFINITY_INGOT_FORMER:
     - "&7Forms ingots from dusts"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b16x"
-    - "&8⇨ &e⚡ &77,200 J/s"
+    - "&8⇨ &e⚡ &714,400 J/s"
 
 URANIUM_EXTRACTOR:
   name: "&aUranium Extractor"
@@ -507,7 +507,7 @@ URANIUM_EXTRACTOR:
   description:
     - "&7Converts cobble into uranium"
   stats:
-    - "&8⇨ &e⚡ &7240 J/s"
+    - "&8⇨ &e⚡ &7480 J/s"
 
 DECOMPRESSOR:
   name: "&7Decompressor"
@@ -516,7 +516,7 @@ DECOMPRESSOR:
   description:
     - "&7Reduces blocks to their base material"
   stats:
-    - "&8⇨ &e⚡ &760 J/s"
+    - "&8⇨ &e⚡ &7120 J/s"
 
 GEAR_TRANSFORMER:
   name: "&7Gear Transformer"
@@ -535,7 +535,7 @@ BASIC_COBBLE_GEN:
     - "&7Automatically generates cobblestone over time"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b1x"
-    - "&8⇨ &e⚡ &724 J/s"
+    - "&8⇨ &e⚡ &748 J/s"
 
 ADVANCED_COBBLE_GEN:
   name: "&cAdvanced &8Cobble Generator"
@@ -545,7 +545,7 @@ ADVANCED_COBBLE_GEN:
     - "&7Automatically generates cobblestone over time"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b4x"
-    - "&8⇨ &e⚡ &7120 J/s"
+    - "&8⇨ &e⚡ &7150 J/s"
 
 INFINITY_COBBLE_GEN:
   name: "&cInfinity &8Cobble Generator"
@@ -555,7 +555,7 @@ INFINITY_COBBLE_GEN:
     - "&7Automatically generates cobblestone over time"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b64x"
-    - "&8⇨ &e⚡ &7800 J/s"
+    - "&8⇨ &e⚡ &71,600 J/s"
 
 BASIC_OBSIDIAN_GEN:
   name: "&8Obsidian Generator"
@@ -565,7 +565,7 @@ BASIC_OBSIDIAN_GEN:
     - "&7Automatically generates obsidian over time"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b1x"
-    - "&8⇨ &e⚡ &7240 J/s"
+    - "&8⇨ &e⚡ &7480 J/s"
 
 SINGULARITY_CONSTRUCTOR:
   name: "&fSingularity Constructor"
@@ -575,7 +575,7 @@ SINGULARITY_CONSTRUCTOR:
     - "&7Condenses large amounts of resources"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b1x"
-    - "&8⇨ &e⚡ &7120 J/s"
+    - "&8⇨ &e⚡ &7240 J/s"
 
 INFINITY_CONSTRUCTOR:
   name: "&bInfinity &fConstructor"
@@ -585,7 +585,7 @@ INFINITY_CONSTRUCTOR:
     - "&7Quickly condenses large amounts of resources"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b64x"
-    - "&8⇨ &e⚡ &71,200 J/s"
+    - "&8⇨ &e⚡ &72,400 J/s"
 
 STONEWORKS_FACTORY:
   name: "&8Stoneworks Factory"
@@ -594,7 +594,7 @@ STONEWORKS_FACTORY:
   description:
     - "&7Generates cobblestone and processes it into various materials"
   stats:
-    - "&8⇨ &e⚡ &7240 J/s"
+    - "&8⇨ &e⚡ &7480 J/s"
   usage:
     - "&eClick&7 the choice slots to cycle between Smelting, Crushing, Compacting, and Transforming"
 
@@ -606,7 +606,7 @@ VOID_HARVESTER:
     - "&7Slowly harvests &8Void &7Bits from nothing..."
   stats:
     - "&8⇨ &e⚡ &7Speed: &b1x"
-    - "&8⇨ &e⚡ &7120 J/s"
+    - "&8⇨ &e⚡ &7240 J/s"
 
 INFINITE_VOID_HARVESTER:
   name: "&bInfinite &8Void Harvester"
@@ -616,7 +616,7 @@ INFINITE_VOID_HARVESTER:
     - "&7Harvests &8Void &7Bits from nothing..."
   stats:
     - "&8⇨ &e⚡ &7Speed: &b64x"
-    - "&8⇨ &e⚡ &712,000 J/s"
+    - "&8⇨ &e⚡ &724,000 J/s"
 
 INFINITE_MACHINE_CIRCUIT:
   name: "&bInfinite &6Machine Circuit"
@@ -901,7 +901,7 @@ MOB_SIMULATION_CHAMBER:
     - "&7Use mob data cards to activate"
   stats:
     - "&8⇨ &e⚡ &715,000 J Buffer"
-    - "&8⇨ &e⚡ &7150 J/s"
+    - "&8⇨ &e⚡ &7300 J/s"
 
 BASIC_QUARRY:
   name: "&9Basic Quarry"
@@ -911,7 +911,7 @@ BASIC_QUARRY:
     - "&7Automatically mines overworld ores"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b1x"
-    - "&8⇨ &e⚡ &7300 J/s"
+    - "&8⇨ &e⚡ &7600 J/s"
 
 ADVANCED_QUARRY:
   name: "&cAdvanced Quarry"
@@ -921,7 +921,7 @@ ADVANCED_QUARRY:
     - "&7Automatically mines overworld and nether ores"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b2x"
-    - "&8⇨ &e⚡ &7900 J/s"
+    - "&8⇨ &e⚡ &71,800 J/s"
 
 VOID_QUARRY:
   name: "&8Void Quarry"
@@ -931,7 +931,7 @@ VOID_QUARRY:
     - "&7Automatically mines overworld and nether ores"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b6x"
-    - "&8⇨ &e⚡ &73,600 J/s"
+    - "&8⇨ &e⚡ &77,200 J/s"
 
 INFINITY_QUARRY:
   name: "&bInfinity Quarry"
@@ -941,7 +941,7 @@ INFINITY_QUARRY:
     - "&7Automatically mines overworld and nether ores"
   stats:
     - "&8⇨ &e⚡ &7Speed: &b64x"
-    - "&8⇨ &e⚡ &736,000 J/s"
+    - "&8⇨ &e⚡ &772,000 J/s"
 
 STORAGE_FORGE:
   name: "&6Storage Forge"

@@ -1,6 +1,5 @@
 package io.github.mooy1.infinityexpansion.items.generators;
 
-import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
 import io.github.mooy1.infinityexpansion.InfinityExpansion;
@@ -8,7 +7,6 @@ import io.github.mooy1.infinityexpansion.categories.Groups;
 import io.github.mooy1.infinityexpansion.items.SlimefunExtension;
 import io.github.mooy1.infinityexpansion.items.blocks.InfinityWorkbench;
 import io.github.mooy1.infinityexpansion.items.materials.Materials;
-import io.github.mooy1.infinitylib.machines.MachineLore;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.implementation.SlimefunItems;

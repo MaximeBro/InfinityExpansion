@@ -12,7 +12,6 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
-import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
@@ -219,11 +218,13 @@ public final class StorageUnit extends MenuBlock implements DistinctiveItem {
             if (itemStackType != null && CompatUtils.hasPdc(meta, AMOUNT_KEY, "INTEGER")) {
                 int amount = CompatUtils.getPdcInt(meta, AMOUNT_KEY, 0);
                 ItemStack item = CompatUtils.getPdcItemStack(meta, ITEM_KEY, itemStackType);
+
                 if (item != null) {
                     return new Pair<>(item, amount);
                 }
             }
         }
+
         return null;
     }
 

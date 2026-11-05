@@ -1,17 +1,11 @@
 package io.github.mooy1.infinityexpansion.categories;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
-import java.util.UUID;
+import java.util.*;
 
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
+import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey;
@@ -48,32 +42,32 @@ import me.mrCookieSlime.Slimefun.api.inventory.BlockMenu;
  *
  * @author Mooy1
  */
-public final class InfinityGroup extends FlexItemGroup {
+public final class InfinityGroup extends ItemGroup {
 
     private static final int[] INFINITY_RECIPE_SLOTS = {
-            1, 2, 3, 4, 5, 6,
-            10, 11, 12, 13, 14, 15,
-            19, 20, 21, 22, 23, 24,
-            28, 29, 30, 31, 32, 33,
-            37, 38, 39, 40, 41, 42,
-            46, 47, 48, 49, 50, 51
+        1, 2, 3, 4, 5, 6,
+        10, 11, 12, 13, 14, 15,
+        19, 20, 21, 22, 23, 24,
+        28, 29, 30, 31, 32, 33,
+        37, 38, 39, 40, 41, 42,
+        46, 47, 48, 49, 50, 51
     };
     private static final int[] NORMAL_RECIPE_SLOTS = {
-            12, 13, 14,
-            21, 22, 23,
-            30, 31, 32
+        12, 13, 14,
+        21, 22, 23,
+        30, 31, 32
     };
     private static final int NORMAL_RECIPE_TYPE = 19;
     private static final int NORMAL_RECIPE_OUTPUT = 25;
     private static final int[] NORMAL_RECIPE_BACKGROUND = {
-            1, 2, 3, 4, 5, 6, 7, 8,
-            36, 37, 38, 39, 40, 41, 42, 43, 44
+        1, 2, 3, 4, 5, 6, 7, 8,
+        36, 37, 38, 39, 40, 41, 42, 43, 44
     };
     private static final int[] INFINITY_OUTPUT_BORDER = {
-            25, 26, 34, 43, 44
+        25, 26, 34, 43, 44
     };
     private static final int[] INFINITY_BACKGROUND = {
-            9, 18, 27, 36, 53
+        9, 18, 27, 36, 53
     };
     private static final int INFINITY_OUTPUT = 35;
     private static final int BACK = 0;
@@ -81,12 +75,12 @@ public final class InfinityGroup extends FlexItemGroup {
     private static final int PREV = 45;
     private static final int INFINITY_BENCH = 8;
     private static final int[] WORKBENCH_BORDER = {
-            7, 16, 17
+        7, 16, 17
     };
     private static final ItemStack BENCH = CustomItemStack.create(MaterialCompat.safe(XMaterial.NETHER_STAR),
-            "&bCreate the recipe from items in your inventory: ",
-            "&aLeft-Click to move 1 set",
-            "&aRight-Click to move as many sets as possible"
+        "&bCreate the recipe from items in your inventory: ",
+        "&aLeft-Click to move 1 set",
+        "&aRight-Click to move as many sets as possible"
     );
     private static final ItemStack INFO = CustomItemStack.create(MaterialCompat.safe(XMaterial.CYAN_STAINED_GLASS_PANE), "&3Info");
     private static final SlimefunGuideImplementation GUIDE = Slimefun.getRegistry().getSlimefunGuide(SlimefunGuideMode.SURVIVAL_MODE);
@@ -94,8 +88,8 @@ public final class InfinityGroup extends FlexItemGroup {
     private static final LinkedHashMap<String, Pair<SlimefunItemStack, ItemStack[]>> ITEMS = new LinkedHashMap<>();
     private static final List<String> IDS = new ArrayList<>();
 
-    InfinityGroup(NamespacedKey key, ItemStack item, int tier) {
-        super(key, item, tier);
+    InfinityGroup(NamespacedKey key, ItemStack item) {
+        super(key, item, 3);
         InfinityWorkbench.TYPE.sendRecipesTo((input, output) -> {
             io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem sfItem = io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem.getByItem(output);
             SlimefunItemStack sfStack = new SlimefunItemStack(sfItem.getId(), output);
@@ -105,11 +99,10 @@ public final class InfinityGroup extends FlexItemGroup {
     }
 
     @Override
-    public boolean isVisible(@Nonnull Player p, @Nonnull PlayerProfile profile, @Nonnull SlimefunGuideMode layout) {
-        return false;
+    public boolean isVisible(@Nonnull Player p) {
+        return true;
     }
 
-    @Override
     public void open(Player player, PlayerProfile playerProfile, SlimefunGuideMode slimefunGuideMode) {
         open(player, new BackEntry(null, playerProfile, Slimefun.getRegistry().getSlimefunGuide(slimefunGuideMode)), true);
         playerProfile.getGuideHistory().add(this, 1);

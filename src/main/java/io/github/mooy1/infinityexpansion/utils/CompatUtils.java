@@ -180,10 +180,13 @@ public final class CompatUtils {
      */
     @Nullable
     public static Object itemStackDataType() {
+        if (!classExists("org.bukkit.persistence.PersistentDataType")) {
+            return null; // 1.8-1.12 : PersistentType is never referenced because PdcTypes class is never reached
+        }
         try {
-            return Class.forName("io.github.mooy1.infinitylib.common.PersistentType")
-                    .getField("ITEM_STACK_OLD").get(null);
-        } catch (ReflectiveOperationException | LinkageError e) {
+            return PdcTypes.itemStackOld();
+        }
+        catch (LinkageError e) {
             return null;
         }
     }

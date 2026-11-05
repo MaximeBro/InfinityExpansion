@@ -39,8 +39,8 @@ public final class SlimefunExtension {
 
     private SlimefunExtension() {}
 
-    private static final int INFINITY_CAPACITY = 2000000000;
-    private static final int VOID_CAPACITY = 16000000;
+    private static final int INFINITY_CAPACITY = 2_000_000_000;
+    private static final int VOID_CAPACITY = 16_000_000;
 
     private static final int ADVANCED_GEO_SPEED = 4;
     private static final int ADVANCED_GEO_ENERGY = 120;

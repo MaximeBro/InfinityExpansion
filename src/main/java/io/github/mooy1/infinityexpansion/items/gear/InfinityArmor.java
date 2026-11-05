@@ -26,7 +26,7 @@ public final class InfinityArmor extends SlimefunArmorPiece implements Protectiv
     private static final NamespacedKey KEY = InfinityExpansion.createKey("infinity_armor");
 
     public InfinityArmor(SlimefunItemStack item, PotionEffect[] effects, ItemStack[] recipe) {
-        super(Groups.INFINITY_CHEAT, item, InfinityWorkbench.TYPE, recipe, effects);
+        super(Groups.INFINITY, item, InfinityWorkbench.TYPE, recipe, effects);
     }
 
     @Nonnull
